@@ -85,7 +85,7 @@ const BasicDay = (props: BasicDayProps) => {
     } else if (isToday) {
       styles.push(style.current.today);
     }
-
+    styles.push({ borderRadius: 16, borderWidth: 1, borderColor: '#00000024' });
     //Custom marking type
     if (isCustom && customStyles && customStyles.container) {
       if (customStyles.container.borderRadius === undefined) {
